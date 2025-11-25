@@ -1,0 +1,9 @@
+-- AlterTable
+ALTER TABLE "Comment" ADD COLUMN     "likesCount" INTEGER NOT NULL DEFAULT 0;
+
+-- AlterTable
+ALTER TABLE "Post" ADD COLUMN     "totalComments" INTEGER NOT NULL DEFAULT 0,
+ADD COLUMN     "totalLikes" INTEGER NOT NULL DEFAULT 0;
+
+-- AlterTable
+ALTER TABLE "Reply" ADD COLUMN     "likesCount" INTEGER NOT NULL DEFAULT 0;
